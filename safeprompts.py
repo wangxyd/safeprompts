@@ -19,7 +19,7 @@ from .lib.WordsSearch import WordsSearch
     desire_priority=88,
     hidden=True,
     desc="简易的提示词保护插件。",
-    version="1.0",
+    version="1.1",
     author="空心菜",
 )
 class Safeprompts(Plugin):
@@ -52,7 +52,7 @@ class Safeprompts(Plugin):
             self.images_dir = conf.get("images_dir", os.path.join(curdir, "images"))
             logger.info("[Safeprompts] inited")
         except Exception as e:
-            logger.warn("[Safeprompts] init failed, ignore or see https://github.com/zhayujie/chatgpt-on-wechat/tree/master/plugins/safeprompts .")
+            logger.warn("[Safeprompts] init failed, ignore.")
             raise e
 
     def on_handle_context(self, e_context: EventContext):

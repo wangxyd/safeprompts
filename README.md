@@ -33,4 +33,5 @@
 
 ## 致谢
 
+核心逻辑来自敏感词插件https://github.com/zhayujie/chatgpt-on-wechat/tree/master/plugins/banwords
 搜索功能实现来自https://github.com/toolgood/ToolGood.Words
